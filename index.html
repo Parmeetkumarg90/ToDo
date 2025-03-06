@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <form method="post" onsubmit="veri()">
+        <header>Login To To-Do Application</header>
+        <main>
+            <section id="m1">
+                <label for="user">Enter User Name</label>
+                <input type="text" id="user" name="user" placeholder="User-name" autofocus required>
+            </section>
+            <section id="m2">
+                <label for="pass">Enter Password</label>
+                <input type="password" id="pass" placeholder="m3kd1#@^%^" name="pass" required>
+            </section>
+            <section id="m3">
+                <label for="cpass">Confirm Password</label>
+                <input type="password" name="cpass" placeholder="m3kd1#@^%^" onkeyup="check(this)" id="cpass" required>
+                <div id="error"></div>
+            </section>
+        </main>
+        <footer id="foot">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </footer>
+    </form>
+</body>
+<script src="javascript/index.js"></script>
+</html>

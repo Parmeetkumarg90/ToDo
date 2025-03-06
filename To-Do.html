@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Website</title>
+    <link rel="stylesheet" href="css/To-Do.css">
+    <style>       
+        body {
+            background: url('image/pexels-cottonbro-9665176.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>To-Do App</p>
+    </header>
+    <select name="find" id="choice" onchange="choice(this.value)">
+        <option value="all">All</option>
+        <option value="complete">Completed</option>
+        <option value="pending">Pending</option>
+    </select>
+    <main>
+        <form id="section1">
+            <input type="text" placeholder="Title of the Task" id="title" required>
+            <textarea placeholder="Description of the Task" id="descrip" required></textarea>
+            <input type="button" class="responsive-button" value="Save">
+        </form>
+        <section id="section2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="javascript/new-to-do.js"></script>
+</body>
+
+</html>
